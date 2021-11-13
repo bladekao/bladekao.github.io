@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+    <head>
+        <title>高士傑的期中個人網站切</title>
+        
+            <link rel="stylesheet" href="styleindex.css", />
+            
+
+           <style type="text/css">
+               /* font */
+              @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+              @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Mochiy+Pop+P+One&display=swap');
+              @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Libre+Baskerville:ital@1&family=Mochiy+Pop+P+One&family=Uchen&display=swap');
+              @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+              @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@300&display=swap');
+              @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Mochiy+Pop+P+One&family=Uchen&display=swap');
+                *{
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    
+                }
+                html,body{
+                    height: 100%;
+                }
+                body{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: #CCC;
+                }
+                /* bodyblock */
+                .bodyBlock{
+                    width: 100%;
+                    height: 600px;
+                    background-color: #FFF;
+                    
+                    background: 
+                    linear-gradient(120deg, #ff1 50%,transparent 50%)center center / 100% 100%,
+                    url("https://picsum.photos/1200/600?random=100")right center / auto 150%; 
+                    font-family: 'Mochiy Pop P One', sans-serif;
+                    
+                }
+                .contatier{
+                    height: 100%; 
+                    width: 100%;
+                    margin: auto;
+                    max-width: 1540px;
+                }
+                .body-text {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                }
+                .body-text h1{
+                    font-size: 80px;
+                    font-weight: 200;
+                    padding-bottom: 0.3em;
+                    margin-bottom: 0.3em;
+                }
+                .body-text h1 small{
+                    display: block;
+                    font-size: 53px;
+                    border-bottom: 1px solid #333;
+                    font-weight: 100;
+                }
+                .body-text h2{
+                    font-size: 50px;
+                    font-weight: 150;
+                }
+                .body-text p{
+                    font-size: 20px;
+                    font-weight: 200;
+                }
+                /* title1 */
+                .title1 h1{
+                    width: 65%;
+                    box-sizing: border-box;
+                    margin-top: 1em ;
+                    display: flex;
+                }
+                .title1 h1::before{
+                    content: '';
+                    display:flex;
+                    height: 2em;
+                    flex-grow: 1;
+                    background-color: #FFF;
+                    margin: auto;
+
+                }
+                 .title1 h1::before{
+                    margin-right: 1em;
+                    margin-left: 7em;
+                }
+                .title1 h2{
+                    margin-bottom: 2.5em ;
+                    margin-right: 2.5em ;
+                }
+
+                .title1 h2::before{
+                    content: '';
+                    display: block;
+                    height: 5px;
+                    width: 420px;
+                    flex-grow: 1;
+                    background-color: #FFF;
+                    margin-left: 10em;
+                   
+                }
+                .title1 h2::before{
+                    margin-top: -.2em;
+               
+                } 
+                /* title2 */
+                .title2 h1{
+                    width: 75%;
+                    box-sizing: border-box;
+                    margin-top: 3em ;
+                    display: flex;
+                }
+                .title2 h1::before{
+                    content: '';
+                    display:flex;
+                    height: 2em;
+                    flex-grow: 1;
+                    background-color: #FFF;
+                    margin: auto;
+
+                }
+                 .title2 h1::before{
+                    margin-right: 1em;
+                    margin-left: 7em;
+                }
+                .title2 h2{
+                    margin-bottom: 2.5em ;
+                    margin-right: 2.5em ;
+                    
+                }
+
+                .title2 h2::before{
+                    content: '';
+                    display: block;
+                    height: 5px;
+                    width: 19em;
+                    flex-grow: 1;
+                    background-color: #FFF;
+                    margin-left: 10em;
+
+                }
+                .title2 h2::before{
+                    margin-top: -.2em;
+               
+                } 
+                /* title3 */
+                .title3 h1{
+                    width: 75%;
+                    box-sizing: border-box;
+                    margin-top: 1em ;
+                    display: flex;
+                }
+                .title3 h1::before{
+                    content: '';
+                    display:flex;
+                    height: 2em;
+                    flex-grow: 1;
+                    background-color: #FFF;
+                    margin: auto;
+
+                }
+                 .title3 h1::before{
+                    margin-right: 1em;
+                    margin-left: 7em;
+                }
+                .title3 h2{
+                    margin-bottom: 2.5em ;
+                    margin-right: 2.5em ;
+                }
+
+                .title3 h2::before{
+                    content: '';
+                    display: block;
+                    height: 5px;
+                    width: 19em;
+                    flex-grow: 1;
+                    background-color: #FFF;
+                    margin-left: 10em;
+                   
+                }
+                .title3 h2::before{
+                    margin-top: -.2em;
+               
+                } 
+                /* img-text */
+                .img-textphoto{
+                   width: 100%;
+                   display: flex;
+                   font-family: 'Karla', sans-serif;
+                }
+                .img-textphoto .item{
+                   width: 25%;
+                   position: relative;
+                   text-align:center;
+                }
+                .img-textphoto .item img{
+                   width: 100%;
+                   vertical-align: middle;
+                   display: flex;
+                   justify-content: space-around;
+                   
+                }
+                .img-textphoto .item .txt{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                    padding: 20px;
+                    background-color:  rgba(0,0,0,.6);
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    opacity: 0;
+                    transition: opacity .5s;
+                    
+                }
+                .img-textphoto .item:hover .txt{
+                    opacity: 1;
+                }
+                .img-textphoto .item h2{
+                    font-size: 40px;
+                    color: #ff0;
+                    font-weight: 500;
+                    
+                }
+                .img-textphoto .item h2:after{
+                    content:'';
+                    display: block;
+                    width: 0%;
+                    height: 2px;
+                    margin: 10px;
+                    background-color: #ff0;
+                    transition: width .5s .3s;
+                }
+                .img-textphoto .item:hover h2:after{
+                    width: 100%;
+                }
+                .img-textphoto .item p{
+                    font-size: 18px;
+                    color: #fff;
+                    font-weight: 100;
+                }
+                /* textcard */
+                .textcard{
+                    width: 1200px;
+                    font-family: 'Uchen', serif;
+                    display: flex;
+
+                }
+                .textcard .item{
+                    width: 368px;
+                    margin: 15px;
+                    text-align: center;
+                    border: 1px solid #ccc;
+                    transform: translateY(0px);
+                    transition: .5s;
+                    display: flex;
+                    flex-direction: column;
+
+                }
+                .textcard .item img{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    vertical-align: middle;
+                    justify-content: space-around;
+                }
+                .textcard .item h2{
+                    border-bottom: 1px solid #888;
+                    padding-bottom: .3em;
+                    margin-bottom: .4em;
+                    font-weight: 900;
+                    transition: .25s;
+                }
+                .textcard .item p{
+                    line-height: 1.6;
+                    font-weight: 400;
+                    transition: .25s;
+                }
+
+                .textcard .item .txt:before{
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    top: 0;
+                    left: 0;
+
+                    transform: translateY(-100% );
+                }
+                .textcard .item:hover{
+                    transform: translateY(-50px) scale(1.1); 
+                   
+                }
+                .textcard .item:hover .txt{
+                    background-image:linear-gradient(0deg,#F08076,#feb85d);
+                }
+                .textcard .item:hover .txt:before
+                {
+                    border-left:184px solid #feb85d;
+                    border-right:184px solid #feb85d;
+                }
+                .textcard .item:hover h2{
+                    color: white;
+                    border-bottom-color: white;
+                }
+                .textcard .item:hover p{
+                    color: white;
+                }
+                /* imgtest */
+                .imgtest{
+                    width: 1500px;
+                }
+                /* bdcard1 */
+                .bdcard1 img{
+                    width: 1000px;
+                    float:left; 
+                }
+
+                .bdtext1{
+                    float: right; 
+                    margin-top: 15em;
+                    align-items: center;
+                    width: 400px;
+                }
+                .bdtext1  h2{
+                    font-size: 60px;
+                    font-weight: 200;
+                    font-family: 'Noto Sans TC', sans-serif;
+                }
+                .bdtext1  p{
+                    font-size: 20px;
+                    font-weight: 200;
+                    font-family: 'Noto Serif TC', serif;
+                }
+               /* bdcard2 */
+               .bdcard2 img{
+                    width: 1000px;
+                    float:left; 
+                }
+                .bdtext2{
+                    float: right; 
+                    margin-top: 15em;
+                    align-items: center;
+                    width: 400px;
+                }
+                .bdtext2  h2{
+                    font-size: 60px;
+                    font-weight: 200;
+                    font-family: 'Noto Sans TC', sans-serif;
+                }
+                .bdtext2  p{
+                    font-size: 20px;
+                    font-weight: 200;
+                    font-family: 'Noto Serif TC', serif;
+                }
+                /*  */
+                .bdcard3 img{
+                    width: 1000px;
+                    float:left; 
+                }
+                .bdtext3{
+                    float: right; 
+                    margin-top: 15em;
+                    align-items: center;
+                    width: 400px;
+                }
+                .bdtext3  h2{
+                    font-size: 60px;
+                    font-weight: 200;
+                    font-family: 'Noto Sans TC', sans-serif;
+                }
+                .bdtext3  p{
+                    font-size: 20px;
+                    font-weight: 200;
+                    font-family: 'Noto Serif TC', serif;
+                }
+                /* bread */
+                .bread{
+                    padding: 10px;
+                    background-color: #F08076;
+                    box-shadow: 0px 5px 5px hsla(200,100%,20%,.5);
+                }
+                .breadcrumb{
+                    width: 100%;
+                    margin: auto;
+                    display: flex;
+                    
+                }
+                .breadcrumb li{
+                   padding: 0 20px;
+                }
+                .breadcrumb li + li{
+                  padding-left: 0;
+                }
+                .breadcrumb li + li::before{
+                   content: '>';
+                   color: #FFF;
+                }
+                .breadcrumb a{
+                   text-decoration: none;
+                   color: #FFF;
+                   font-family: 'Noto Serif TC', serif;
+                   margin-right: 20px;
+                }
+                .breadcrumb a:hover{
+                   color: #FF0;
+                }
+                .breadcrumb li:last-child a{
+                    color: #0F0;
+                }
+            /* Footerd */
+            .Footerd{
+               padding: 100px 0 0;
+               height: 315px;
+               width: 100%;
+               background: linear-gradient(-20deg, #dad619,#e72a2aa6);
+            }
+            .Footerd .contaier{
+                display: flex;
+                width: 1200px;
+                margin: auto;
+            }
+            .Footerd .footer-item{
+                width: 0;
+                flex-grow: 1;
+                margin: 0 20px;
+                
+            }
+            .Footerd .footer-item h4{
+                font-size: 24px;
+                color:#FFF;
+                border-bottom: 1px dotted #FFF;
+                margin-bottom: .5em;
+                padding-bottom: .5em;
+            }
+            .Footerd .footer-item nav{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            .Footerd .footer-item nav a{
+               color: #FFF;
+               line-height: 1.5;
+               text-decoration: none;
+               padding: 5px 0;
+            }
+            .conpyright{
+                text-align: center;
+                margin: 150px;
+                padding: 10px 0px;
+                color: rgb(25, 148, 45);
+            }
+
+            </style>
+    </head>
+<!--  -->
+<body>
+<!--  -->
+
+<div class="bread">
+    <ol class="breadcrumb">
+            <li><a href="#mymaterial">我的資訊</a></li>
+            <li> <a href="#school">經常來往的地點介紹</a></li>
+            <li> <a href="#img-textphoto">資訊工程系小介紹</a></li>
+            <li> <a href="#Footer">關於</a></li>
+    </ol>
+</div>
+<!--  -->
+<div id="mymaterial"></div>
+<!--  -->
+<br>
+<div class="title1">
+    <h1>我的個人資訊</h1><h2></h2>
+
+</div>
+
+
+<!--  -->
+<div class="bodyBlock"> 
+        <div class="contatier">
+            <div class="body-text">
+                <h1>
+                    資工四甲 資訊工程系 
+                    <small>
+                        1107405020 高士傑
+                    </small>
+                </h1>
+                <h2>
+                    聯絡方式:
+                </h2>
+                <p>
+                    手機:0919060435
+                <br>
+                </p>
+                
+
+            </div>
+        </div>
+</div>
+<!--  -->
+<div id="school"></div>
+<!--  -->
+<div class="title2">
+        <h1>經常來往的地點介紹</h1><h2></h2>
+
+</div>
+
+<!--  -->
+<div class="imgtest">
+    <div class="bdcard1">
+        <img src="https://www.npu.edu.tw/df_ufiles/034/s_%E5%9C%96%E6%9B%B8%E8%B3%87%E8%A8%8A%E5%A4%A7%E6%A8%93%E5%81%B4%E6%8B%8D(1).jpg"/>
+    </div>
+  
+    <div class="bdtext1">
+        <h2>圖書資源大樓</h2>
+        <p>圖書館典藏中外文圖書203，935冊，電子書155，772冊，期刊1，435種及報紙14種，視聽資料10，827件，提供書籍借閱，參考服務，館際合作，影印，電子資源瀏覽及整合查詢，電腦設備檢索，多媒體服務及博碩士論文系統網路平台使用等各項服務。</p>
+        <a href="https://www.npu.edu.tw/tour/Details.aspx?Parser=13,4,34,,,,4"style="color: #1faa00;"target="_blank">(read more)</a>
+        <hr>
+        
+    </div>
+    <div class="bdcard2">
+        <img src="https://www.npu.edu.tw/df_ufiles/034/s_R0345943.jpg"/>
+    </div>
+    <div class="bdtext2">
+        <h2>實驗大樓</h2>
+        <p>一、二樓為餐飲館旅系學生實習場所，分別有中、西式實習廚房及實習旅館。三樓為資訊工程系各類實驗室及研究室。四樓為電信工程系電子實驗室及專題研究室。五樓為電機工程系各類實驗室及研究室。</p>
+        <a href="https://www.npu.edu.tw/tour/Details.aspx?Parser=13,4,34,,,,11"style="color: #1faa00;"target="_blank">(read more)</a>
+        <hr>
+    </div>
+    <div class="bdcard3">
+        <img src="https://www.npu.edu.tw/df_ufiles/034/s_r0345895(1).jpg"/>
+    </div>
+    <div class="bdtext3">
+        <h2>教學大樓</h2>
+        <p>發展定位以實務教學為主，產業研究為輔，重視學生職涯培育工作，並重點發展親島嶼特色，形塑以教學為核心，以務實為本，與菊島共榮的精緻型大學。</p>
+        <a href="https://www.npu.edu.tw/tour/Details.aspx?Parser=13,4,34,,,,3" style="color: #1faa00;"target="_blank">(read more)</a>
+        <hr>
+    </div>
+</div>
+<!--  -->
+<div id="img-textphoto"></div>
+<!--  -->
+<div class="title3">
+    <h1>資訊工程系小介紹</h1><h2></h2>
+
+</div>
+<!--  -->
+<div class="img-textphoto">
+    <div class="item">
+        <img src="https://picsum.photos/500/400?random=20">
+
+        <div class="txt">
+            <h2>資訊工程系到底是甚麼?</h2>
+            <p>資訊工程包含基本的資訊軟體程式操作與應用，與程式語言的規劃與撰寫等，主要研究領域包含電腦網路、資料庫、人工智慧、人機系統、多媒體系統、影像處理、平行處理與分散系統、生物資訊系統、資訊檢索等。</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="https://picsum.photos/500/400?random=21">
+
+        <div class="txt">
+            <h2>讀資工的出路?</h2>
+            <p>在未來數年之內，碩士以上學歷最極需的人才，便是以資訊工程所居冠；行政院科技顧問組指出，軟體程式設計師是目前產業需求量最大的職務，故資訊人才便是產業界的主要職缺，一年四季都會有產業在獵取人才。也因為資訊產業長期都與學校維持良好的產學關係，如此緊密的維繫下，使資工所畢業的學生容易與產業接軌。</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="https://picsum.photos/500/400?random=22">
+
+        <div class="txt">
+            <h2>老師會教那些實用的?</h2>
+            <p>比較實用的有范媽教的C語言，林育達老師的python，跟陳耀宗老師上課教的但要自己要去網路學的java跟自己要去網路學的資料庫系統跟自己要去網路學的Linux跟自己要去網路學的行動裝置程式設計。</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="https://picsum.photos/500/400?random=23">
+
+        <div class="txt">
+            <h2>老師教完作業做不出來?</h2>
+            <p>這其實要看情況，每一位老師教課狀況不太一樣，像有些老師上課教完，出的作業跟上課教的幾乎相同，只是要改一點點的部分，但某些老師出的作業就是你把上課的PTT翻了又翻，怎麼都找不到解決方法，只好自己去網路學習，例如資料庫跟行動裝置程式設計</p>
+        </div>
+    </div>
+</div>
+<!--  -->
+<div id="Footer"></div>
+<!--  -->
+<div class="Footerd">
+    <div class="contaier">
+        <div class="footer-item">
+            <h4>
+                關於學校的資訊
+            </h4>
+            <nav>
+                <a href="https://www.npu.edu.tw/"style="color: #FFF;"target="_blank">澎湖科技大學官網</a>
+                <a href="https://csie.npu.edu.tw/"style="color: #FFF;"target="_blank">澎湖科技大學資工系官網</a>
+            </nav>
+        </div>
+        
+        <div class="footer-item">
+            <h4>
+                關於網頁設計課程的資訊
+            </h4>
+            <nav>
+                <a href="https://csie.npu.edu.tw/?p=447"style="color: #FFF;"target="_blank">關於網頁設計的老師</a>
+                <a href="http://csie.npu.edu.tw/xiang"style="color: #FFF;"target="_blank">關於網頁設計的參考網站</a>
+            </nav>
+        </div>
+        
+        <div class="footer-item">
+            <h4>
+                關於我的資訊
+            </h4>
+            <nav>
+                <p style="color: #FFF;">我的Email:dd56820@gmail.com</p>
+                <p style="color: #FFF;">我的學校Email:d07405020@ems.npu.edu.tw</p>
+            </nav>
+        </div>
+    </div>
+    <div class="conpyright">
+        現在的老師都教的不錯了，沒遇過古富能還在嫌老師不好真的很不OK喔。
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
