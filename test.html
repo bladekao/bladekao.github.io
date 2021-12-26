@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <!-- <script src="註冊會員.js"></script> -->
+    <!-- <link rel="stylesheet" href="註冊會員.css">  -->
+    <head>
+        <meta charset="UTF-8">
+        <title>會員註冊</title>
+
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300&display=swap');
+            *{
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+             }
+            html,body{
+                 height: 100%;
+                
+                }
+            header{
+                display: top;
+            }
+            body{
+                background: url(https://picsum.photos/1600/1200?random=25) no-repeat center center / cover;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+            }
+            
+            .login-form{
+                font-family: 'Noto Serif TC', serif;
+                width: 400px;
+                color: #fff;
+            }
+            .login-form h2{
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #fff;
+                color: #FFF;
+            }
+            .login-form .group{
+                margin-bottom: 20px;
+            }
+            .login-form label{
+                line-height: 2;
+                font-family: 'Noto Serif TC', serif;
+                font-size: 16px;
+            }
+            .login-form input{
+                width: 100%;
+                border: 1px solid #aaa;
+                line-height: 2;
+                border-radius: 5px;
+                font-size: 16px;
+                outline: none;
+            }
+            .login-form input[type="text"], .login-form input[type="password"]{
+                border: 2px solid #6ab4fe;
+            }
+            .login-form input[type="text"]:focus, .login-form input[type="password"]:focus{
+
+                border: 3px solid #2ecc71;
+            }
+            .login-form input[type="button"]{
+                background-color: #6ab4fe;
+            }
+            .login-form input[type="button"]:hover{
+                background-color: #2ecc71;
+                transition: 0.5S;
+               
+            }
+            .login-form .btn-group{
+                font-size: 0;
+                margin-top: 50px;
+            }
+            .login-form .btn1 + .btn{
+                margin-left: 105px;
+                margin-bottom: 20px;
+            }
+            .login-form .btn{
+                font-size: 20px;
+                border-radius: 5px;
+                border: none;
+                background-color: #6ab4fe;
+                width: 180px;
+                padding: 10px 0;
+                color: #fff;
+                font-family: 'Noto Serif TC', serif;
+            }
+            .login-form .btn:hover{
+                background-color: #2ecc71;
+                transition: 0.5S;
+            }
+            .login{
+                width: 600px;
+                height: 500px;
+                background-color: rgba(0,0,0,.5);
+                border-radius: 10px;
+                border: 10px solid #fff;
+                box-shadow: 0 0 60px #000;
+                backdrop-filter: blur(5px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <!-- <a href="https://www.npu.edu.tw/">
+            <img class= img1 src="../圖片/R1.png" height="100px" width="110px">
+        </a>
+
+        <a href="https://itaoi2022.npu.edu.tw/">
+            <img class= img2 src="../圖片/R2.png" height="100px" width="120px">
+        </a>
+
+        <a href="https://csie.npu.edu.tw/">
+            <img class= img3 src="../圖片/R3.png" height="85.5px" width="95.5px">
+        </a> -->
+        <!-- <div class="page">
+            <a href="../登入會員資料檔/登入會員.html">登入頁面</a>
+            <a href="../註冊會員資料檔/註冊會員.html">註冊頁面</a>             
+        </div> -->
+      
+        <form id="registerForm" method="POST" action="http://127.0.0.1:8082/register">
+            <div class="login">
+                <div class="login-form">
+                   <h2>會員登入</h2>
+                   <div class="group">
+                      <label for="user_id">會員帳號</label>
+                      <input type="text" placeholder="user_name" required>
+                      <label for="user_password">會員密碼</label>
+                      <input type="password" placeholder="password" required>
+                      
+                   </div>
+
+                     <div class="btn1"></div>
+                    <button class="btn">登入</button><br>
+                    <label for="user_password">還沒有會員嗎?</label>
+                    <input type="button" value="註冊會員" style="font-size: 20px;height: 60px;  border: none ;    width: 180px;padding: 10px 0;color: #fff;font-family: 'Noto Serif TC', serif;" onclick="location.href='../註冊會員資料檔/註冊會員.html'">
+
+
+                </div>
+            </div>
+        </form>
+		
+
+        
+    </body>
+</html>
